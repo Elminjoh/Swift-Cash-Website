@@ -1,0 +1,178 @@
+body{
+    background-color: rgb(242, 244, 244)
+}
+
+h1 {
+    margin: 10px;  
+    font-style: italic;
+    padding-bottom: 20px;
+}
+
+.nav-menu {
+    overflow: hidden;
+    padding: 10px;
+    text-align: right;
+    
+}
+.nav-menu a {
+    color: rgb(27, 26, 26);
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+.nav-menu a:hover {
+    background-color: #b59f7c;
+}
+
+.line {
+    border-bottom: 1px solid #444;
+}
+.offers {
+    position: relative;
+    display: inline-block;
+}
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to wrap to next line if necessary */
+    gap: 10px; /* Space between buttons */
+    margin-bottom: 20px;
+    justify-content: space-between; /* Distributes buttons with space between */
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color:#b59f7c;
+    color: white;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    font-size: 16px;
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.popup-info {
+    display: none; /* Hide pop-up initially */
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    position: absolute;
+    top: 100%; /* Position the popup below the button */
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Position each button and popup as a flex item */
+.popup-container {
+    position: relative;
+    flex: 1; /* Make all buttons take equal space */
+    min-width: 150px; /* Ensures buttons have a minimum size */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the pop-up relative to the button */
+}
+
+/* Show the popup when the container is hovered */
+.popup-container:hover .popup-info {
+    display: block;
+}
+
+/* Additional styling to make sure popups are centered and responsive */
+.popup-container .popup-info {
+    max-width: 200px;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 90%;
+    max-width: 1000px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+.contact-card {
+    background-color:#b59f7c;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 250px; /* Ensures cards don't shrink too much */
+    flex-shrink: 0; /* Prevents cards from shrinking */
+    margin: 10px; /* Adds additional space around each card */
+}
+
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card i {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.contact-card a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin-top: 10px;
+    border: 2px solid white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.contact-card a:hover {
+    background-color: white;
+    color: #007BFF;
+    border-color: #007BFF;
+}
+
+.contact-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.contact-description {
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: #555;
+}
+img {
+    width: 100%; /* Make the image take the full width of its container */
+    max-width: 600px; /* Ensure it doesn't get too wide */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Slightly round corners */
+    margin: 20px 0; /* Space above and below the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    object-fit: cover; /* Cover the area without stretching */
+}
+footer {
+    background-color: #0d0d18; /* Dark blue background for contrast */
+    color: white; /* White text for readability */
+    padding: 20px; /* Vertical padding for space */
+    text-align: center; /* Center align the text */
+    font-size: 0.9em; /* Slightly smaller font size */
+    position:absolute bottom; /* Fix the footer at the bottom */
+    bottom: 0; /* Align it to the bottom */
+    width: 100%; /* Full width to cover the screen */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    z-index: 1000; /* Ensure it stays on top */
+}
