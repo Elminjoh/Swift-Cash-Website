@@ -4,58 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>$WIFT CA$H</title>
-    <!-- Link to external stylesheets or scripts -->
     <link rel="stylesheet" href="styles.css">
-    
-
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
- <!-- Your content goes here -->
 <body>
+    <header>
+        <h1>$WIFT CA$H</h1>
+        <nav class="nav-menu">
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <div class="menu-links">
+                <a href="index.html" class="line">Home</a>
+                <a href="about.html" class="line">About</a>
+                <a href="services.html" class="line">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
 
-   
+    <main>
+        <!-- Other sections... -->
 
-    <h1>$WIFT CA$H</h1>
+        <section id="contact">
+            <div class="contact-container">
+                <h2 class="contact-title">Contact Us</h2>
+                <p class="contact-description">If you have any queries, contact us through the following methods:</p>
+                
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <strong>Phone Numbers</strong>
+                    <a href="tel:+27116095667">+27 11 609 5667</a>
+                    <a href="tel:+27614495898">+27 61 449 5898</a>
+                </div>
 
-  <div class="nav-menu">
-        <a href="index.html" class="line">Home</a>
-        <a href="about.html" class="line">About</a>
-        <a href="services.html" class="line">Services</a>
-        <a href="contact.html">Contact</a>
-   </div>
+                <div class="contact-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <strong>WhatsApp</strong>
+                    <a href="https://wa.me/27736860019" target="_blank">+27 73 686 0019</a>
+                </div>
 
-   <div class="contact-container">
-    <div class="contact-title">Contact Us</div>
-    <div class="contact-description">If you have any queries, contact us through the following methods:</div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <strong>Email Address</strong>
+                    <a href="mailto:info@swiftcash.org.za">info@swiftcash.org.za</a>
+                </div>
 
-    <div class="contact-card">
-        <i class="fas fa-phone"></i>
-        <strong>Phone Numbers</strong>
-        <a href="tel:+27116095667">+27 11 609 5667</a>
-        <a href="tel:+27614495898">+27 61 449 5898</a>
-    </div>
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <strong>Address</strong>
+                    <a href="https://www.google.com/maps/place/541+Louis+Botha+Ave,+Savoy+Estate,+Johannesburg,+2090,+South+Africa/@-26.1322887,28.0826951,17z/data=!3m1!4b1!4m6!3m5!1s0x1e950d13a55c0f5f:0xed5978b30fe8387!8m2!3d-26.1322887!4d28.08527!16s%2Fg%2F11c5ff37hb?entry=ttu" target="_blank">
+                        541 Louis Botha Avenue, Savoy Estate, Johannesburg, 2090
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <div class="contact-card">
-        <i class="fab fa-whatsapp"></i>
-        <strong>WhatsApp</strong>
-        <a href="https://wa.me/27736860019" target="_blank">+27 73 686 0019</a>
-    </div>
+    <footer>
+        <p>&copy; 2024 $WIFT CA$H All rights reserved.</p>
+        <p>Elmi Njoh Mtanase</p>
+    </footer>
 
-    <div class="contact-card">
-        <i class="fas fa-envelope"></i>
-        <strong>Email Address</strong>
-        <a href="mailto:info@swiftcash.org.za">info@swiftcash.org.za</a>
-    </div>
-
-    <div class="contact-card">
-        <i class="fas fa-map-marker-alt"></i>
-        <strong>Address</strong>
-        <a href="https://www.google.com/maps/place/541+Louis+Botha+Ave,+Savoy+Estate,+Johannesburg,+2090,+South+Africa/@-26.1322887,28.0826951,17z/data=!3m1!4b1!4m6!3m5!1s0x1e950d13a55c0f5f:0xed5978b30fe8387!8m2!3d-26.1322887!4d28.08527!16s%2Fg%2F11c5ff37hb?entry=ttu" target="_blank">
-            541 Louis Botha Avenue, Savoy Estate, Johannesburg, 2090
-        </a>
-    </div>
-</div>
-
-   <footer>
-    <p>&copy; 2024 $WIFT CA$H All rights reserved.</p>
-    <p>Elmi Njoh Mtanase</p>
-</footer>
+    <script>
+        function toggleMenu() {
+            const menuLinks = document.querySelector('.menu-links');
+            menuLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

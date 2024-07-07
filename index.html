@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,16 +12,20 @@
  <!-- Your content goes here -->
 <body>
 
+    <header>
+        <h1>$WIFT CA$H</h1>
+        <nav class="nav-menu">
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <div class="menu-links">
+                <a href="index.html" class="line">Home</a>
+                <a href="about.html" class="line">About</a>
+                <a href="services.html" class="line">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
    
-
-    <h1>$WIFT CA$H</h1>
-
-  <div class="nav-menu">
-        <a href="index.html" class="line">Home</a>
-        <a href="about.html" class="line">About</a>
-        <a href="services.html" class="line">Services</a>
-        <a href="contact.html">Contact</a>
-   </div>
 
    <div id="info">
         <h3>Nurturing Dreams And Pioneering Excellence</h3>
@@ -73,5 +77,12 @@
         <p>Elmi Njoh Mtanase</p>
     </footer>
     
+    <script>
+        function toggleMenu() {
+            const menuLinks = document.querySelector('.menu-links');
+            menuLinks.classList.toggle('active');
+        }
+    </script>
+
 </body>
 </html>

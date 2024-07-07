@@ -1,4 +1,292 @@
-body{
+/* Basic styling */
+body {
+    background-color: rgb(242, 244, 244);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.menu-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-menu a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.nav-menu a:hover {
+    border-bottom: 2px solid #b59f7c;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu-links.active {
+        display: flex;
+    }
+    .nav-menu a {
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+.offers {
+    position: relative;
+    display: inline-block;
+}
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to wrap to next line if necessary */
+    gap: 10px; /* Space between buttons */ 
+    margin-bottom: 20px;
+    justify-content: space-between; /* Distributes buttons with space between */
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color:#b59f7c;
+    color: white;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    font-size: 16px;
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.popup-info {
+    display: none; /* Hide pop-up initially */ 
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    position: absolute;
+    top: 100%; /* Position the popup below the button */
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Position each button and popup as a flex item */
+.popup-container {
+    position: relative;
+    flex: 1; /* Make all buttons take equal space */
+    min-width: 150px; /* Ensures buttons have a minimum size */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the pop-up relative to the button */
+}
+
+/* Show the popup when the container is hovered */
+.popup-container:hover .popup-info {
+    display: block;
+}
+
+/* Additional styling to make sure popups are centered and responsive */
+.popup-container .popup-info {
+    max-width: 200px;
+    text-align: center;
+}
+
+
+img {
+    width: 100%; /* Make the image take the full width of its container */
+    max-width: 600px; /* Ensure it doesn't get too wide */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Slightly round corners */
+    margin: 20px 0; /* Space above and below the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    object-fit: cover; /* Cover the area without stretching */
+}
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2, h3, h4 {
+    margin: 10px 0;
+}
+
+p, ul, ol {
+    margin: 10px 0;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contact-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.contact-card i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #b59f7c;
+}
+
+.contact-card a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.contact-card a:hover {
+    color: #b59f7c;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2, h3, h4 {
+        font-size: 1.2rem;
+    }
+    p, ul, ol {
+        font-size: 1rem;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-card {
+        width: 90%;
+        max-width: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .contact-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*body{
     background-color: rgb(242, 244, 244)
 }
 
@@ -34,10 +322,10 @@ h1 {
 }
 .buttons-container {
     display: flex;
-    flex-wrap: wrap; /* Allows buttons to wrap to next line if necessary */
-    gap: 10px; /* Space between buttons */
+    flex-wrap: wrap; /* Allows buttons to wrap to next line if necessary 
+    gap: 10px; /* Space between buttons 
     margin-bottom: 20px;
-    justify-content: space-between; /* Distributes buttons with space between */
+    justify-content: space-between; /* Distributes buttons with space between 
 }
 
 .btn {
@@ -57,34 +345,34 @@ h1 {
 }
 
 .popup-info {
-    display: none; /* Hide pop-up initially */
+    display: none; /* Hide pop-up initially 
     padding: 10px;
     border: 1px solid #ccc;
     background-color: #f9f9f9;
     position: absolute;
-    top: 100%; /* Position the popup below the button */
+    top: 100%; /* Position the popup below the button 
     left: 0;
     width: 100%;
     z-index: 1;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Position each button and popup as a flex item */
+/* Position each button and popup as a flex item 
 .popup-container {
     position: relative;
-    flex: 1; /* Make all buttons take equal space */
-    min-width: 150px; /* Ensures buttons have a minimum size */
+    flex: 1; /* Make all buttons take equal space 
+    min-width: 150px; /* Ensures buttons have a minimum size 
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers the pop-up relative to the button */
+    align-items: center; /* Centers the pop-up relative to the button 
 }
 
-/* Show the popup when the container is hovered */
+/* Show the popup when the container is hovered 
 .popup-container:hover .popup-info {
     display: block;
 }
 
-/* Additional styling to make sure popups are centered and responsive */
+/* Additional styling to make sure popups are centered and responsive 
 .popup-container .popup-info {
     max-width: 200px;
     text-align: center;
@@ -112,9 +400,9 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 250px; /* Ensures cards don't shrink too much */
-    flex-shrink: 0; /* Prevents cards from shrinking */
-    margin: 10px; /* Adds additional space around each card */
+    min-width: 250px; /* Ensures cards don't shrink too much 
+    flex-shrink: 0; /* Prevents cards from shrinking 
+    margin: 10px; /* Adds additional space around each card 
 }
 
 
@@ -156,23 +444,23 @@ h1 {
     color: #555;
 }
 img {
-    width: 100%; /* Make the image take the full width of its container */
-    max-width: 600px; /* Ensure it doesn't get too wide */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Slightly round corners */
-    margin: 20px 0; /* Space above and below the image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    object-fit: cover; /* Cover the area without stretching */
+    width: 100%; /* Make the image take the full width of its container 
+    max-width: 600px; /* Ensure it doesn't get too wide 
+    height: auto; /* Maintain aspect ratio *
+    border-radius: 10px; /* Slightly round corners 
+    margin: 20px 0; /* Space above and below the image 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow 
+    object-fit: cover; /* Cover the area without stretching 
 }
 footer {
-    background-color: #0d0d18; /* Dark blue background for contrast */
-    color: white; /* White text for readability */
-    padding: 20px; /* Vertical padding for space */
-    text-align: center; /* Center align the text */
-    font-size: 0.9em; /* Slightly smaller font size */
-    position:absolute bottom; /* Fix the footer at the bottom */
-    bottom: 0; /* Align it to the bottom */
-    width: 100%; /* Full width to cover the screen */
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    z-index: 1000; /* Ensure it stays on top */
+    background-color: #0d0d18; /* Dark blue background for contrast 
+    color: white; /* White text for readability 
+    padding: 20px; /* Vertical padding for space 
+    text-align: center; /* Center align the text 
+    font-size: 0.9em; /* Slightly smaller font size 
+    position:absolute bottom; /* Fix the footer at the bottom 
+    bottom: 0; /* Align it to the bottom 
+    width: 100%; /* Full width to cover the screen 
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth 
+    z-index: 1000; /* Ensure it stays on top 
 }
