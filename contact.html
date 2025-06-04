@@ -3,74 +3,305 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>$WIFT CA$H</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us - SwiftCash</title>
     <link rel="icon" href="N logo.jpg">
-    <!-- Link to Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>$WIFT CA$H</h1>
-        <nav class="nav-menu">
-            <div class="menu-icon" onclick="toggleMenu()">☰</div>
-            <div class="menu-links">
-                <a href="index.html" class="line">Home</a>
-                <a href="about.html" class="line">About</a>
-                <a href="services.html" class="line">Services</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </nav>
+        <div class="header-content">
+            <div class="logo">$WIFT CA$H</div>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <!-- Other sections... -->
+        <div class="contact-hero">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Get in touch with us through any of the following methods. We're here to help!</p>
+            </div>
+        </div>
 
-        <section id="contact">
-            <div class="contact-container">
-                <h2 class="contact-title">Contact Us</h2>
-                <p class="contact-description">If you have any queries, contact us through the following methods:</p>
-                
-                <div class="contact-card">
-                    <i class="fas fa-phone"></i>
-                    <strong>Phone Numbers</strong>
-                    <a href="tel:+27116095667">+27 11 609 5667</a>
-                    <a href="tel:+27614495898">+27 61 449 5898</a>
+        <section class="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Phone Numbers</h3>
+                        <div class="contact-details">
+                            <a href="tel:+27116095667">
+                                <i class="fas fa-phone-alt"></i>
+                                +27 11 609 5667
+                            </a>
+                            <a href="tel:+27614495898">
+                                <i class="fas fa-mobile-alt"></i>
+                                +27 61 449 5898
+                            </a>
+                        </div>
+                        <p class="contact-description">Call us during business hours for immediate assistance</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3>WhatsApp</h3>
+                        <div class="contact-details">
+                            <a href="https://wa.me/27736860019" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                +27 73 686 0019
+                            </a>
+                        </div>
+                        <p class="contact-description">Message us on WhatsApp for quick responses and support</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Address</h3>
+                        <div class="contact-details">
+                            <a href="mailto:info@swiftcash.org.za">
+                                <i class="fas fa-envelope"></i>
+                                info@swiftcash.org.za
+                            </a>
+                        </div>
+                        <p class="contact-description">Send us an email for detailed inquiries and documentation</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Our Location</h3>
+                        <div class="contact-details">
+                            <a href="https://www.google.com/maps/place/541+Louis+Botha+Ave,+Savoy+Estate,+Johannesburg,+2090,+South+Africa/@-26.1322887,28.0826951,17z/data=!3m1!4b1!4m6!3m5!1s0x1e950d13a55c0f5f:0xed5978b30fe8387!8m2!3d-26.1322887!4d28.08527!16s%2Fg%2F11c5ff37hb?entry=ttu" target="_blank">
+                                <i class="fas fa-map-marker-alt"></i>
+                                541 Louis Botha Avenue<br>
+                                Savoy Estate, Johannesburg, 2090<br>
+                                South Africa
+                            </a>
+                        </div>
+                        <p class="contact-description">Visit our office for in-person consultations and meetings</p>
+                    </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="contact-card">
-                    <i class="fab fa-whatsapp"></i>
-                    <strong>WhatsApp</strong>
-                    <a href="https://wa.me/27736860019" target="_blank">+27 73 686 0019</a>
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h2>Send Us a Message</h2>
+                        <p>Fill out the form below and we'll get back to you as soon as possible</p>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service of Interest</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="micro-finance">Micro Finance</option>
+                                <option value="it-support">IT Support</option>
+                                <option value="air-bnb">Air B&B</option>
+                                <option value="logistics-hospitality">Logistics & Hospitality</option>
+                                <option value="general-inquiry">General Inquiry</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">I would like to receive updates and newsletters from SwiftCash</label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
                 </div>
+            </div>
+        </section>
 
-                <div class="contact-card">
-                    <i class="fas fa-envelope"></i>
-                    <strong>Email Address</strong>
-                    <a href="mailto:info@swiftcash.org.za">info@swiftcash.org.za</a>
+        <section class="business-hours">
+            <div class="container">
+                <h2>Business Hours</h2>
+                <div class="hours-grid">
+                    <div class="hours-card">
+                        <h4>Office Hours</h4>
+                        <div class="hours-list">
+                            <div class="hour-item">
+                                <span>Monday - Friday</span>
+                                <span>8:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="hour-item">
+                                <span>Saturday</span>
+                                <span>9:00 AM - 4:00 PM</span>
+                            </div>
+                            <div class="hour-item">
+                                <span>Sunday</span>
+                                <span>Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hours-card">
+                        <h4>IT Support</h4>
+                        <div class="hours-list">
+                            <div class="hour-item">
+                                <span>24/7 Emergency Support</span>
+                                <span>Available</span>
+                            </div>
+                            <div class="hour-item">
+                                <span>Phone Support</span>
+                                <span>24 Hours</span>
+                            </div>
+                            <div class="hour-item">
+                                <span>Remote Assistance</span>
+                                <span>On Demand</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hours-card">
+                        <h4>Emergency Contact</h4>
+                        <div class="hours-list">
+                            <div class="hour-item">
+                                <span>After Hours</span>
+                                <span>WhatsApp Only</span>
+                            </div>
+                            <div class="hour-item">
+                                <span>Weekends</span>
+                                <span>Limited Support</span>
+                            </div>
+                            <div class="hour-item">
+                                <span>Holidays</span>
+                                <span>Emergency Only</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="contact-card">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <strong>Address</strong>
-                    <a href="https://www.google.com/maps/place/541+Louis+Botha+Ave,+Savoy+Estate,+Johannesburg,+2090,+South+Africa/@-26.1322887,28.0826951,17z/data=!3m1!4b1!4m6!3m5!1s0x1e950d13a55c0f5f:0xed5978b30fe8387!8m2!3d-26.1322887!4d28.08527!16s%2Fg%2F11c5ff37hb?entry=ttu" target="_blank">
-                        541 Louis Botha Avenue, Savoy Estate, Johannesburg, 2090
-                    </a>
+        <section class="map-section">
+            <div class="container">
+                <h2>Find Us</h2>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>Interactive Map</h3>
+                        <p>541 Louis Botha Avenue, Savoy Estate, Johannesburg, 2090</p>
+                        <a href="https://www.google.com/maps/place/541+Louis+Botha+Ave,+Savoy+Estate,+Johannesburg,+2090,+South+Africa" target="_blank" class="map-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Open in Google Maps
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 $WIFT CA$H All rights reserved.</p>
-        <p>Elmi Njoh Mtanase</p>
+        <div class="footer-content">
+            <p>&copy; 2024 SwiftCash. All rights reserved.</p>
+            <p>Elmi Njoh Mtanase</p>
+        </div>
     </footer>
 
+    <script src="script.js"></script>
     <script>
-        function toggleMenu() {
-            const menuLinks = document.querySelector('.menu-links');
-            menuLinks.classList.toggle('active');
-        }
+        // Contact form handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Simple validation
+            if (!data.firstName || !data.lastName || !data.email || !data.subject || !data.message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Show success message
+            const submitBtn = document.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+            submitBtn.style.background = '#28a745';
+            submitBtn.disabled = true;
+            
+            // Reset form after 3 seconds
+            setTimeout(() => {
+                this.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.style.background = '';
+                submitBtn.disabled = false;
+                alert('Thank you for your message! We will get back to you soon.');
+            }, 3000);
+        });
+        
+        // Form field animations
+        const inputs = document.querySelectorAll('input, textarea, select');
+        inputs.forEach(input => {
+            input.addEventListener('focus', function() {
+                this.parentElement.classList.add('focused');
+            });
+            
+            input.addEventListener('blur', function() {
+                if (this.value === '') {
+                    this.parentElement.classList.remove('focused');
+                }
+            });
+        });
     </script>
 </body>
 </html>

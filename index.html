@@ -1,89 +1,125 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>$WIFT CA$H</title>
+    <title>SwiftCash - Financial Innovation & Technology Solutions</title>
     <link rel="icon" href="N logo.jpg">
-    <!-- Link to external stylesheets or scripts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    
-
 </head>
- <!-- Your content goes here -->
 <body>
-
     <header>
-        <h1>$WIFT CA$H</h1>
-        <nav class="nav-menu">
-            <div class="menu-icon" onclick="toggleMenu()">☰</div>
-            <div class="menu-links">
-                <a href="index.html" class="line">Home</a>
-                <a href="about.html" class="line">About</a>
-                <a href="services.html" class="line">Services</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </nav>
+        <div class="header-content">
+            <div class="logo">$WIFT CA$H</div>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
     </header>
 
-   
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Nurturing Dreams & Pioneering Excellence</h1>
+            <p>Welcome to SwiftCash, where innovation meets service excellence across Micro Finance, IT Support, Air B&B, and Logistics & Hospitality. We are architects of financial empowerment, providing tailored solutions that pave the way for dreams to flourish.</p>
+            <a href="services.html" class="cta-button">Explore Our Services</a>
+        </div>
+    </section>
 
-   <div id="info">
-        <h3>Nurturing Dreams And Pioneering Excellence</h3>
-        <p>Welcome to SwiftCash, where innovation meets service excellence across Micro Finance, IT Support, Air B&B, and Logistics & Hospitality. At SwiftCash, we are more than a financial institution; we are architects of financial empowerment, providing tailored Micro Finance solutions that pave the way for dreams to flourish.</p>
-        <p>In the realm of IT Support, SwiftCash stands as your reliable technological partner. With a commitment to seamless operations, we ensure that your digital landscape remains robust and future-ready. Our Air B&B division transforms spaces into memorable experiences, offering comfort and hospitality that transcends the ordinary.</p>
-        <!--add more about us button -->
-    </div>
-    
-    <div class="offers">
-        <h4>Serving And Providing The Best Services For Clients</h4>
-        <div class="buttons-container">
-            <div class="popup-container">
-                <a href="services.html#MF">
-                <button class="btn">Micro Finance</button></a>
-                <div class="popup-info">
-                    SwiftCash pioneers financial empowerment, offering tailored micro-finance solutions that unlock opportunities and propel individuals towards their dreams with confidence and stability.
-                </div></a>
+    <section class="services-preview">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Comprehensive solutions designed to empower your success</p>
             </div>
-    
-            <div class="popup-container">
-                <a href="services.html#ITS">
-                <button class="btn">IT Support</button></a>
-                <div class="popup-info">
-                    Elevate your digital journey with SwiftCash's cutting-edge IT support. Our dedicated team ensures seamless operations, robust systems, and future-ready technology, empowering your business to thrive.
+            
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Micro Finance</h3>
+                    <p>SwiftCash pioneers financial empowerment, offering tailored micro-finance solutions that unlock opportunities and propel individuals towards their dreams with confidence and stability.</p>
+                    <a href="services.html#MF" class="service-link">Learn More</a>
                 </div>
-            </div>
-    
-            <div class="popup-container">
-                <a href="services.html#ABB"></a>
-                <button class="btn">Air B&B</button>
-                <div class="popup-info">
-                    Experience comfort redefined with SwiftCash's Air B&B services. Immerse yourself in unforgettable stays tailored to your preferences, where every space becomes a home away from home.
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>IT Support</h3>
+                    <p>Elevate your digital journey with SwiftCash's cutting-edge IT support. Our dedicated team ensures seamless operations, robust systems, and future-ready technology.</p>
+                    <a href="services.html#ITS" class="service-link">Learn More</a>
                 </div>
-            </div>
-    
-            <div class="popup-container">
-                <a href="services.html#LH">
-                <button class="btn">Logistics and Hospitality</button></a>
-                <div class="popup-info">
-                    SwiftCash's Logistics & Hospitality division seamlessly intertwines logistics efficiency with top-notch hospitality. From transportation solutions to superior guest experiences, we redefine the standards of service in every journey.
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Air B&B</h3>
+                    <p>Experience comfort redefined with SwiftCash's Air B&B services. Immerse yourself in unforgettable stays tailored to your preferences.</p>
+                    <a href="services.html#ABB" class="service-link">Learn More</a>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Logistics & Hospitality</h3>
+                    <p>SwiftCash's Logistics & Hospitality division seamlessly intertwines logistics efficiency with top-notch hospitality.</p>
+                    <a href="services.html#LH" class="service-link">Learn More</a>
                 </div>
             </div>
         </div>
-        <img src="finance-careers.jpg" alt="">
-    </div>
+    </section>
+
+    <section class="about-preview">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Why Choose SwiftCash?</h2>
+                    <p>At SwiftCash, we are more than a financial institution; we are architects of financial empowerment, providing tailored solutions across multiple industries that pave the way for dreams to flourish.</p>
+                    <p>Choose SwiftCash for a transformative journey where innovation, client-centricity, and excellence ensure that choosing us means choosing empowerment, reliability, and a seamless fusion of expertise.</p>
+                    <a href="about.html" class="cta-button">Learn More About Us</a>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Service Areas</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2024 $WIFT CA$H All rights reserved.</p>
-        <p>Elmi Njoh Mtanase</p>
+        <div class="footer-content">
+            <p>&copy; 2024 SwiftCash. All rights reserved.</p>
+            <p>Elmi Njoh Mtanase</p>
+        </div>
     </footer>
-    
-    <script>
-        function toggleMenu() {
-            const menuLinks = document.querySelector('.menu-links');
-            menuLinks.classList.toggle('active');
-        }
-    </script>
 
+    <script src="script.js"></script>
 </body>
 </html>

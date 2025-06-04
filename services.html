@@ -3,91 +3,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>$WIFT CA$H</title>
+    <title>Our Services - SwiftCash</title>
     <link rel="icon" href="N logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>$WIFT CA$H</h1>
-        <nav class="nav-menu">
-            <div class="menu-icon" onclick="toggleMenu()">☰</div>
-            <div class="menu-links">
-                <a href="index.html" class="line">Home</a>
-                <a href="about.html" class="line">About</a>
-                <a href="services.html" class="line">Services</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </nav>
+        <div class="header-content">
+            <div class="logo">$WIFT CA$H</div>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section id="MF">
-            <h2>Micro Finance</h2>
-            <p>SwiftCash's Micro Finance division is your gateway to financial empowerment. Our commitment to inclusive and personalized solutions sets us apart. With flexible terms and tailored packages, we cater to diverse needs, fostering growth and stability. Choose SwiftCash for transparent processes, competitive rates, and a customer-centric approach that puts your financial goals first. We empower dreams, whether you’re a small business owner or an individual seeking support. SwiftCash is not just a financial partner; we’re a catalyst for your success, providing the means to achieve and exceed your financial aspirations with confidence and ease.</p>
-            <ul>
-                <li>Small Business Loans</li>
-                <li>Personalized Financial Planning</li>
-                <li>Micro Loans for Individuals</li>
-                <li>Financial Education and Resources</li>
-                <li>Flexible Repayment Options</li>
-            </ul>
+        <div class="services-hero">
+            <div class="container">
+                <h1>Our Services</h1>
+                <p>Comprehensive solutions designed to empower your success across multiple industries</p>
+            </div>
+        </div>
+
+        <section id="MF" class="service-section">
+            <div class="container">
+                <div class="service-header">
+                    <div class="service-icon-large">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <div class="service-title">
+                        <h2>Micro Finance</h2>
+                        <p class="service-subtitle">Empowering Financial Dreams</p>
+                    </div>
+                </div>
+                
+                <p>SwiftCash's Micro Finance division is your gateway to financial empowerment. Our commitment to inclusive and personalized solutions sets us apart. With flexible terms and tailored packages, we cater to diverse needs, fostering growth and stability. Choose SwiftCash for transparent processes, competitive rates, and a customer-centric approach that puts your financial goals first. We empower dreams, whether you're a small business owner or an individual seeking support. SwiftCash is not just a financial partner; we're a catalyst for your success, providing the means to achieve and exceed your financial aspirations with confidence and ease.</p>
+                
+                <div class="service-features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-store"></i>
+                        <h4>Small Business Loans</h4>
+                        <p>Flexible funding solutions for entrepreneurs and small business owners</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Personalized Financial Planning</h4>
+                        <p>Tailored financial strategies to help you achieve your goals</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-user"></i>
+                        <h4>Micro Loans for Individuals</h4>
+                        <p>Quick and accessible loans for personal financial needs</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h4>Financial Education & Resources</h4>
+                        <p>Educational programs to improve financial literacy</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-calendar-check"></i>
+                        <h4>Flexible Repayment Options</h4>
+                        <p>Customizable repayment schedules that fit your budget</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="ITS">
-            <h2>IT Support</h2>
-            <p>Welcome to SwiftCash, where innovation and technology converge to elevate your business to new heights. Our IT Services division is dedicated to providing comprehensive solutions that empower your organization in the digital landscape. With a commitment to excellence, we seamlessly integrate cutting-edge technology, strategic planning, and expert support to ensure your systems operate at peak efficiency.</p>
-            <h3>Services</h3>
-            <ol>
-              <b> <li>Technical Support:</b> <i> SwiftCash offers 24/7 technical support to address any issues promptly, ensuring your business operations run smoothly without interruptions.</i></li>
-              <b> <li>Strategic Planning: </b> <i>Our expert team collaborates with you to develop strategic IT plans aligned with your business goals, leveraging technology to drive growth and efficiency.</i></li>
-              <b> <li>Cybersecurity Solutions:</b> <i>Safeguard your digital assets with SwiftCash’s robust cybersecurity services, protecting your business from evolving online threats.</i></li>
-              <b> <li>Cloud Integration: </b> <i>Embrace the flexibility and scalability of cloud solutions with SwiftCash’s expertise in seamless cloud integration tailored to your business needs.</i></li>
-              <b> <li>Data Management: </b> <i> SwiftCash ensures the integrity and security of your data, offering comprehensive data management solutions that optimize storage, retrieval, and analysis.</i></li>
-            </ol>
-            <h3>Why Choose Our IT Services</h3>
-            <ul>
-               <b> <li>Expertise:</b> <i>Our team comprises seasoned professionals with a deep understanding of the latest technological trends.</i></li>
-               <b> <li>Client-Centric Approach:</b> <i> We prioritize your unique needs, ensuring personalized solutions that align with your business objectives.</i></li>
-               <b> <li>Reliability:</b> <i> SwiftCash IT Services guarantee reliable, efficient, and secure technology solutions that evolve with your business.</i></li>
-            </ul>
+        <section id="ITS" class="service-section">
+            <div class="container">
+                <div class="service-header">
+                    <div class="service-icon-large">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="service-title">
+                        <h2>IT Support</h2>
+                        <p class="service-subtitle">Technology Excellence & Innovation</p>
+                    </div>
+                </div>
+                
+                <p>Welcome to SwiftCash, where innovation and technology converge to elevate your business to new heights. Our IT Services division is dedicated to providing comprehensive solutions that empower your organization in the digital landscape. With a commitment to excellence, we seamlessly integrate cutting-edge technology, strategic planning, and expert support to ensure your systems operate at peak efficiency.</p>
+                
+                <h3>Our IT Services</h3>
+                <div class="service-list">
+                    <div class="service-item">
+                        <div class="service-number">01</div>
+                        <div class="service-content">
+                            <h4>Technical Support</h4>
+                            <p>SwiftCash offers 24/7 technical support to address any issues promptly, ensuring your business operations run smoothly without interruptions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-number">02</div>
+                        <div class="service-content">
+                            <h4>Strategic Planning</h4>
+                            <p>Our expert team collaborates with you to develop strategic IT plans aligned with your business goals, leveraging technology to drive growth and efficiency.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-number">03</div>
+                        <div class="service-content">
+                            <h4>Cybersecurity Solutions</h4>
+                            <p>Safeguard your digital assets with SwiftCash's robust cybersecurity services, protecting your business from evolving online threats.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-number">04</div>
+                        <div class="service-content">
+                            <h4>Cloud Integration</h4>
+                            <p>Embrace the flexibility and scalability of cloud solutions with SwiftCash's expertise in seamless cloud integration tailored to your business needs.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-number">05</div>
+                        <div class="service-content">
+                            <h4>Data Management</h4>
+                            <p>SwiftCash ensures the integrity and security of your data, offering comprehensive data management solutions that optimize storage, retrieval, and analysis.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3>Why Choose Our IT Services</h3>
+                <div class="why-choose-grid">
+                    <div class="choice-item">
+                        <i class="fas fa-star"></i>
+                        <h4>Expertise</h4>
+                        <p>Our team comprises seasoned professionals with a deep understanding of the latest technological trends.</p>
+                    </div>
+                    <div class="choice-item">
+                        <i class="fas fa-heart"></i>
+                        <h4>Client-Centric Approach</h4>
+                        <p>We prioritize your unique needs, ensuring personalized solutions that align with your business objectives.</p>
+                    </div>
+                    <div class="choice-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Reliability</h4>
+                        <p>SwiftCash IT Services guarantee reliable, efficient, and secure technology solutions that evolve with your business.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="ABB">
-            <h2>Air B&B</h2>
-            <p>Discover a world of unparalleled comfort with our Air B&B services...</p>
-            <ul>
-                <li>Personalized Comfort</li>
-                <li>Exceptional Hospitality</li>
-                <li>Memorable Experiences</li>
-                <li>Seamless Booking Process</li>
-                <li>Trusted and Verified Listings</li>
-            </ul>
+        <section id="ABB" class="service-section">
+            <div class="container">
+                <div class="service-header">
+                    <div class="service-icon-large">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="service-title">
+                        <h2>Air B&B</h2>
+                        <p class="service-subtitle">Comfort Redefined</p>
+                    </div>
+                </div>
+                
+                <p>Discover a world of unparalleled comfort with our Air B&B services. At SwiftCash, we transform ordinary spaces into extraordinary experiences, ensuring every stay becomes a cherished memory. Our carefully curated accommodations combine modern amenities with personalized touches, creating an atmosphere where comfort meets sophistication.</p>
+                
+                <div class="service-features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-bed"></i>
+                        <h4>Personalized Comfort</h4>
+                        <p>Each space is thoughtfully designed to meet your individual preferences and needs</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-concierge-bell"></i>
+                        <h4>Exceptional Hospitality</h4>
+                        <p>Our dedicated team ensures your stay exceeds expectations at every touchpoint</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-camera"></i>
+                        <h4>Memorable Experiences</h4>
+                        <p>Create lasting memories with unique amenities and local experiences</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>Seamless Booking Process</h4>
+                        <p>Easy online booking with instant confirmation and flexible cancellation</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-certificate"></i>
+                        <h4>Trusted & Verified Listings</h4>
+                        <p>All our properties are thoroughly vetted and verified for your peace of mind</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="LH">
-            <h2>Logistics & Hospitality</h2>
-            <p>SwiftCash Logistics & Hospitality seamlessly orchestrates every step of your journey...</p>
-            <ul>
-                <li>Effortless Transitions</li>
-                <li>Tailored Accommodations</li>
-                <li>Logistics Expertise</li>
-                <li>Exceptional Hospitality</li>
-                <li>Client-Centric Approach</li>
-            </ul>
+        <section id="LH" class="service-section">
+            <div class="container">
+                <div class="service-header">
+                    <div class="service-icon-large">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <div class="service-title">
+                        <h2>Logistics & Hospitality</h2>
+                        <p class="service-subtitle">Seamless Integration of Service Excellence</p>
+                    </div>
+                </div>
+                
+                <p>SwiftCash Logistics & Hospitality seamlessly orchestrates every step of your journey, combining efficient logistics solutions with exceptional hospitality services. We understand that successful logistics goes beyond moving goods – it's about creating experiences that delight customers and drive business success. Our integrated approach ensures that from the moment your goods leave their origin to their final destination, every aspect is managed with precision and care.</p>
+                
+                <div class="service-features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-exchange-alt"></i>
+                        <h4>Effortless Transitions</h4>
+                        <p>Smooth coordination between logistics and hospitality touchpoints</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-cogs"></i>
+                        <h4>Tailored Accommodations</h4>
+                        <p>Customized solutions that adapt to your specific industry requirements</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-route"></i>
+                        <h4>Logistics Expertise</h4>
+                        <p>Advanced supply chain management and transportation solutions</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-smile"></i>
+                        <h4>Exceptional Hospitality</h4>
+                        <p>Premium service standards that enhance customer satisfaction</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-user-friends"></i>
+                        <h4>Client-Centric Approach</h4>
+                        <p>Solutions designed around your unique business objectives and challenges</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Get Started?</h2>
+                <p>Contact us today to discuss how our services can help your business thrive</p>
+                <a href="contact.html" class="cta-button">Get in Touch</a>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 $WIFT CA$H All rights reserved.</p>
-        <p>Elmi Njoh Mtanase</p>
+        <div class="footer-content">
+            <p>&copy; 2024 SwiftCash. All rights reserved.</p>
+            <p>Elmi Njoh Mtanase</p>
+        </div>
     </footer>
 
-    <script>
-        function toggleMenu() {
-            const menuLinks = document.querySelector('.menu-links');
-            menuLinks.classList.toggle('active');
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
